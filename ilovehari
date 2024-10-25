@@ -1,9 +1,15 @@
+import time  # Import the time module to use sleep for delays
+
 def love_message(name):
+    # Create a message string using the provided name
     message = f"I love you, {name}!"
+    
+    # Iterate over each character in the message
     for char in message:
+        # Print the character without a newline and flush the output buffer
         print(char, end='', flush=True)
-        time.sleep(0.1)  # Pause for a brief moment for effect
+        # Pause for a brief moment to create a typing effect
+        time.sleep(0.1)
 
-import time
-
+# Call the function with the name "Haritha"
 love_message("Haritha")
