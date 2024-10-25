@@ -1,0 +1,9 @@
+def love_message(name):
+    message = f"I love you, {name}!"
+    for char in message:
+        print(char, end='', flush=True)
+        time.sleep(0.1)  # Pause for a brief moment for effect
+
+import time
+
+love_message("Haritha")
