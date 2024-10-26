@@ -7,15 +7,18 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             background-color: #f0f0f0;
+            text-align: center;
         }
         .flag {
             width: 300px;
             height: 200px;
             border: 1px solid #000;
+            margin-bottom: 20px;
         }
         .saffron {
             background-color: #FF9933;
@@ -41,33 +44,10 @@
             border-radius: 50%;
             box-sizing: border-box;
         }
-        .ashoka-chakra::before {
-            content: "";
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 5px;
-            height: 12px;
-            background-color: #000080; /* Navy Blue */
-        }
-        .ashoka-chakra::after {
-            content: "";
-            position: absolute;
-            left: 50%;
-            bottom: -12px;
-            transform: translateX(-50%);
-            width: 5px;
-            height: 12px;
-            background-color: #000080; /* Navy Blue */
-        }
         .spokes {
             position: absolute;
             width: 30px;
             height: 30px;
-            border: 1px solid #000080; /* Navy Blue */
-            border-radius: 50%;
-            box-sizing: border-box;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -94,6 +74,11 @@
         .spoke:nth-child(10) { transform: rotate(270deg); }
         .spoke:nth-child(11) { transform: rotate(300deg); }
         .spoke:nth-child(12) { transform: rotate(330deg); }
+        .text {
+            font-size: 24px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -119,5 +104,7 @@
         </div>
         <div class="green"></div>
     </div>
+    <div class="text">Jai Hind</div>
+    <div class="text">Hello Mustafa and my dear friends</div>
 </body>
 </html>
