@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>U.S. Flag</title>
+    <title>Indian National Flag</title>
     <style>
         body {
             display: flex;
@@ -15,40 +15,109 @@
         .flag {
             width: 300px;
             height: 200px;
-            background-color: #b22234; /* Red */
+            border: 1px solid #000;
+        }
+        .saffron {
+            background-color: #FF9933;
+            height: 33.33%;
+        }
+        .white {
+            background-color: #FFFFFF;
+            height: 33.33%;
             position: relative;
         }
-        .stripe {
-            height: 14.2857%; /* 7 stripes */
-            background-color: #ffffff; /* White */
+        .green {
+            background-color: #138808;
+            height: 33.33%;
         }
-        .blue {
-            background-color: #3c3b6e; /* Blue */
+        .ashoka-chakra {
             position: absolute;
-            width: 40%;
-            height: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 30px;
+            height: 30px;
+            border: 5px solid #000080; /* Navy Blue */
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+        .ashoka-chakra::before {
+            content: "";
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 5px;
+            height: 12px;
+            background-color: #000080; /* Navy Blue */
+        }
+        .ashoka-chakra::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: -12px;
+            transform: translateX(-50%);
+            width: 5px;
+            height: 12px;
+            background-color: #000080; /* Navy Blue */
+        }
+        .spokes {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #000080; /* Navy Blue */
+            border-radius: 50%;
+            box-sizing: border-box;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .spoke {
+            position: absolute;
+            width: 1px;
+            height: 12px;
+            background-color: #000080; /* Navy Blue */
             top: 0;
-            left: 0;
+            left: 50%;
+            transform-origin: bottom;
         }
-        .star {
-            color: white;
-            font-size: 12px;
-            position: absolute;
-        }
+        /* Create spokes */
+        .spoke:nth-child(1) { transform: rotate(0deg); }
+        .spoke:nth-child(2) { transform: rotate(30deg); }
+        .spoke:nth-child(3) { transform: rotate(60deg); }
+        .spoke:nth-child(4) { transform: rotate(90deg); }
+        .spoke:nth-child(5) { transform: rotate(120deg); }
+        .spoke:nth-child(6) { transform: rotate(150deg); }
+        .spoke:nth-child(7) { transform: rotate(180deg); }
+        .spoke:nth-child(8) { transform: rotate(210deg); }
+        .spoke:nth-child(9) { transform: rotate(240deg); }
+        .spoke:nth-child(10) { transform: rotate(270deg); }
+        .spoke:nth-child(11) { transform: rotate(300deg); }
+        .spoke:nth-child(12) { transform: rotate(330deg); }
     </style>
 </head>
 <body>
     <div class="flag">
-        <div class="stripe"></div>
-        <div class="stripe" style="top: 14.2857%;"></div>
-        <div class="stripe" style="top: 28.5714%;"></div>
-        <div class="stripe" style="top: 42.8571%;"></div>
-        <div class="stripe" style="top: 57.1429%;"></div>
-        <div class="stripe" style="top: 71.4286%;"></div>
-        <div class="stripe" style="top: 85.7143%;"></div>
-        
-        <div class="blue">
-            <!-- Stars -->
-            <div class="star" style="top: 10%; left: 10%;">★</div>
-            <div class="star" style="top: 10%; left: 30%;">★</div>
-            <div class="star" style="top: 10%; left: 50%;">★</di
+        <div class="saffron"></div>
+        <div class="white">
+            <div class="ashoka-chakra">
+                <div class="spokes">
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                </div>
+            </div>
+        </div>
+        <div class="green"></div>
+    </div>
+</body>
+</html>
